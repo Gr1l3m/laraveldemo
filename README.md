@@ -46,6 +46,10 @@
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/9aee37be13f71b2b31cc)
 
+## Dump file
+The file is in the root of the repository.
+*dump.sql*
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
