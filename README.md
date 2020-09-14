@@ -42,6 +42,10 @@
 - **api/products/id (put)** updates sku, name, quatity, price, description of the product that matches the id.
 - **api/products/id (delete)** deletes the product that matches the id.
 
+## Postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/9aee37be13f71b2b31cc)
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
