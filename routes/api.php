@@ -32,8 +32,8 @@ Route::put('user/{id}', 'App\Http\Controllers\API\AuthController@updateUser')->m
 Route::delete('user/{id}','App\Http\Controllers\API\AuthController@deleteUser')->middleware('auth:api');
 
 // RESET PASSWORD
-Route::get('forget-password', 'App\Http\Controllers\API\PasswordController@postEmail');
-Route::post('reset-password', 'App\Http\Controllers\Auth\ResetPasswordController@updatePassword');
+Route::get('forget-password', 'App\Http\Controllers\API\PasswordController@postEmail')->middleware('auth:api');
+Route::post('reset-password', 'App\Http\Controllers\API\PasswordController@updatePassword')->middleware('auth:api');
 
 // PRODUCT
 // C
