@@ -9,6 +9,11 @@ class Product extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'sku', 'name', 'quantity', 'price', 'description', 'user_id'
+        // todo: missing img src
+    ];
+
     public function user(){
         return $this->belongsTo('App\Models\User');
     }
