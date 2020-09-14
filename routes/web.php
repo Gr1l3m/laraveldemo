@@ -30,7 +30,7 @@ Route::get('login', 'App\Http\Controllers\Auth\LoginController@login')->name('lo
 Route::post('login', 'App\Http\Controllers\Auth\LoginController@authenticate');
 Route::get('logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
-Route::get('home', 'HomeController@home')->name('home');
+Route::get('home', 'App\Http\Controllers\HomeController@home')->name('home');
 
 Route::get('forget-password', 'App\Http\Controllers\Auth\ForgotPasswordController@getEmail');
 Route::post('forget-password', 'App\Http\Controllers\Auth\ForgotPasswordController@postEmail');
