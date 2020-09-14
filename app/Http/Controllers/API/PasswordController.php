@@ -26,7 +26,7 @@ class PasswordController extends Controller
 
         Mail::send('auth.password.verify',['token' => $token], function($message) use ($request) {
             $message->from($request->email);
-            $message->to('codingdriver15@gmail.com');
+            $message->to($request->email);
             $message->subject('Reset Password Notification');
         });
 

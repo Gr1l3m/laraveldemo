@@ -9,7 +9,8 @@
                             {{ __('A fresh verification link has been sent to your email address.') }}
                         </div>
                     @endif
-                    <a href="{{ url('/reset-password/'.$token) }}">Click Here</a>
+                    <p>Código de verificació: {{$token}}</p>
+                    <a href="{{ url('/reset-password/') }}">Click Here</a>
                 </div>
             </div>
         </div>
